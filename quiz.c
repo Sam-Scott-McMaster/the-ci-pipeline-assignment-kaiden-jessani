@@ -6,6 +6,10 @@ int main(int argc, char *argv[])
 {
 	if(strcmp(argv[0], "./quiz") == 0)
 	{
+			if(argc == 1)
+			{
+				puts("ERROR");
+			}
 			if(strcmp(argv[1], "-1") == 0)
 			{
 					puts("Question 1: What is the command to compile a C program, while also storing it as a 'shortcut' for running it in the future? Assume the name of the file is File1.c, and I want to store it in the shortcut File1");
